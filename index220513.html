@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+  <meta name="auther" content="writher">
+  <meta name="description" content="explanation">
+  <meta name="viewport" content="width=device-width,inital-scale=1.0">
+  <title>폼 관련요소</title>
+  <link rel="stylesheet" href="#">
+  </head>
+  <body>
+  <!-- 폼 관련요소 -->
+  <!--
+    -서버로 데이터를 전송해주는 역할
+    -로그인, 회원가입 폼 양식 등 
+    -텍스트, 인라인요소, 블록요소를 포함할 수 있다.
+  -->
+  <form action="login.js" method="get">
+    <fieldset>
+      <legend>속성</legend>
+      <p>아이디: <input type="text"></p>
+      <p>비밀번호:<input type="password"></p>
+      <p>검색:<input type="search"></p>
+      <p>이메일:<input type="email"></p>
+      <p>전화번호:<input type="tel"></p>
+      <p>컬러선택:<input type="color"></p>
+      <p>수량:<input type="number" min="1" max="10" value="1"></p>
+      <p>만족도:<input type="range" min="1" max="10" value="3"></p>
+      <p>예<input type="radio" name="recive" checked>/아니오<input type="radio" name="recive"></p>
+      <p><input type="checkbox">html
+      <input type="checkbox" checked>css
+      <input type="checkbox">js</p>
+      <p><input type="submit" value="전송"></p>
+      <p><input type="reset" value="취소"></p>
+      <p><input type="button" value="확인"></p>
+      <p><input type="image" src="img/button.png" alt="검색"></p>
+      <p><input type="file"></p>
+    </fieldset>
+  </form>
+  <form action="" method="post">
+    <fieldset>
+      <legend>화원가입</legend>
+      <p>가입목적<br>
+      <textarea row="5" col="200">
+        여러분을 환영합니다.
+      </textarea>
+      </p>
+      <p>전화번호: 
+        <select>
+          <option>지역번호</option>
+          <option selected>02</option>
+          <option>041</option>
+          <option>042</option>
+          <option>043</option>
+        </select>
+      <input type="text">
+    </p>
+    </fieldset>
+  </form>
+  <form action="" method="post">
+    <input type="submit"value="전송">
+    <input type="image"src="img/button.png" alt="전송">
+    <button onclick="javascript:alert('전송되었습니다')">전송</button>
+    <button>취소</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="auther" content="writer">
+  <meta name="description" content="explanation">
+  <meta name="viewport" content="width=device=width,initial-scale=1.0">
+  <!-- <link rel=styledheet" href="css/style.css">
+  <script scr="js/custom.js"></script> -->
+  <!-- 스크립트의 확장자 제이쿼리=js,자바스크립트=js
+  프론트엔드=리액트,뷰,고어,랭귤러 등등=각각의 고유의 확장자
+  프레임워크 프로그램밍  
+  자바스크립트의 계열=React(jsx,js), Veu.js, Node.js, Next.js,Vs,Ts(ts)
+-->
+  <title>List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- list -->
+<!-- 
+  -순차적 목록 ol<어쩌다 한번씩 사용>, 비순차적 목록 ul<자주사용>, 정의형 목록 dl<어쩌다 사용>
+  -정의형 목록은 귑게 말하면 문제와 답을 표현하는데 사용
+  -->
+  <!-- <ol>
+    <li>입사지원</li>
+    <li>서류전형</li>
+    <li>1차면접</li>
+  </ol>
+
+  <ul>
+    <li><a href="#">기업소개</a></li>
+    <li><a href="#">사업영역</a></li>
+    <Li><a href="#">제품소개</a></Li>
+  </ul>
+  <dl>
+    <dt>웹 표준 수업과목은?</dt>
+    <dd>html</DD>
+    <dd>css</dd>
+    <dd>jQuery</dd>
+    <dd>javascript</dd>
+  </dl>
+    <h1>백종원의 두부조림</h1>
+    <dt>맛있는 두부조림을 만드는 방법은?</dt>
+    <dd>01.재료:두부1모,양파1개,대파1개
+      <br> 양념:다진마늘1/2스푼,고추가루1스푼,설탕1/2스푼,맛술1스푼,간장3스푼,참기름1스푼을 준비합니다.</dd>
+    <dd>02. 두부1모를 먹기 좋은크기로 썰어줍니다.두부는 부침용,찌개용, 상관없습니다.대파1개와 양파1개도 채썰어서 준비합니다.</dd>
+    <dd>03. 후라이팬에 기름을 넉넉히 붓고 불을 중불에서 두부를 오래 부쳐줍니다.</dd>
+    <dd>04. 두부가 오래익히면 겉은 바삭해지는데 그정도로 노릇노릇하게 익혀주세요.</dd>
+    <dd>05. 두부가 노릇노릇해지면, 남아 있는 기름은 버려줍니다.</dd>
+    <dd>06. 두부를 부쳤던 후라이팬에 물을 반도 안잠길정도해서 물을 넣어줍니다.</dd>
+    <dd>07. 두부위에 양파와 대파를 올린후 마늘1/2스푼을 넣고 </dd>
+    <dd>08. 고추가루1스푼,설탕1/2스푼,맛술1스푼,간장3스푼 그리고 마늘1/2스푼을 넣어줍니다.</dd>
+    <dd>09. 불을 켜서 줄이시다가, 물을 좀더 넣고 두부에 간이 베도록 해서 물기가 거의 없도록 졸여줍니다.	</dd>
+    <dd>10. 마지막에 참기름1스푼으로 마무리해주시면 완성</dd>
+</dl>
+  <ul>
+    <li><a href="#">회사소개</a></li>
+    <ul>
+    <!-- a 태그는 빈 링크(#)클릭 시 페이지의 상단으로 넘어(이동)한다. -->
+    <!-- <li><a href="javascript:;">회사소개</a></li> -->
+      <li><a href="#">인사말</a></li>
+      <li><a href="#">회사연력</a>
+        <ul>
+          <li><a href="#">2022년도의 실적</a></li>
+        </ul>
+      </li>
+    </ul>
+    <li><a href="#">제품소개</a>
+      <ul>
+        <li><a href="#">2022년도 제품</a></li>
+      </ul></li>
+  </ul>
+
+  <ul>
+    <li><a href="#">이체</a>
+      <ul>
+        <li><a href="#">계좌이체</a>
+          <ul>
+            <li><a href="#">즉시이체</a></li>
+            <li><a href="#">다른기관 이체/충전</a></li>
+            <li><a href="#">예적금/펀드이체</a></li>
+            <li><a href="#">예적금/펀드이체</a></li>
+            <li><a href="#">다계좌이체</a></li>
+            <li><a href="#">그룹이체</a></li>
+            <li><a href="#">퇴직연금이체</a></li>
+            <li><a href="#">외화예금이체</a></li>
+            <li><a href="#">아파트중도금이체</a></li>
+          </ul>
+        </li>
+        <li><a href="#">지연이체</a>
+          <ul>
+            <li><a href="#">지연이체서비스안내</a></li>
+            <li><a href="#">지연이체</a></li>
+            <li><a href="#">신청내역조회/취소</a></li>
+            <li><a href="#">지연이체서비스관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <ui>
+    <li class="bold">제품
+      <ul>
+        <li>버즈</li>
+        <li>TV</li>
+      </ul>
+    </li>
+    <li class="bold">고객서비스
+      <ul>
+        <li>매장찾기</li>
+        <li>디지털프라자</li>
+      </ul>
+    </li>
+  </ui>
+
+  <dl>
+    <dt>제품</dt>
+    <dd>버즈</dd>
+    <dd>TV</dd>
+    <dt>고객서비스</dt>
+    <dd>매장찾기</dd>
+    <dd>디지털프라자</dd>
+  </dl> -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="auther" content="writer">
+    <meta name="description" content="explanation">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+    <style>
+      p.text{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+<body>
+<!-- 이미지 -->
+<!-- 
+  -웹 문서에 이미지를 불러오기 위해 사용
+  -경우에 따라<h1>,<p>등 여러 태그와 중첩하여 사용한다.
+ -->
+  <!-- <img src="이미지경로" alt="대체 텍스트 등의 설명" title="툴팁"> -->
+ <!-- title 태그는 생략가능하다. -->
+  <img src="img/logo.png" alt="구글로고"> 
+  <!-- 상위(한단계 위로 갈때 ) ../ 를 사용 
+      ex-> .../img/logo.png -->
+  <!-- <H1 class="sikp"> 네이버 홈페이지에 오신 것을 환영합니다.</H1> -->
+  <h1>
+    <a href="http://naver.com">
+      <img src="img/naver logo.png" alt="네이버로고" style="width:100px;">
+    </a>
+    
+  </h1>
+  <p><img src="img/content01.png" alt="콘텐츠 영역"></p>
+  <!-- 이미지 맵 -->
+  <!-- 
+    -하나의 이미지에 여러개의 링크를 적용할 수 있다.
+    -형식은 사각형, 원혀아, 다각형 형식의 좌표값으로 적용 할 수 있다.
+  -->
+  <img src="img/poster.jpg" alt="청년복지포인트수시모집" usemap="#poster">
+  <map name="poster">
+    <area shape="rect" coords="109,291,392,389" href="http://google.com" alt="청년복지포인트수시모집">
+    <area shape="circle" coords="420,428,60" href="http://djcezanne.co.kr" alt="세잔IT직업전문학교">
+    <area shape="poly" coords="367,90,330,110,330,165,370,190,400,170,400,120" href="http://nate.com" alt="네이트">
+    <area shape="rect" coords="257,665,330,670" href="http://hanmail.net" alt="다음"> 
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et quaerat ipsam, perspiciatis, quis facilis labore expedita beatae sunt natus nisi recusandae, eveniet assumenda repellat. Nostrum deleniti perspiciatis eaque rem.</p> 
+    <!-- 링크<link>태그 -->
+    <!--
+    -택스트나 이미지르 통하여 다른 곳으로 정보를 연결하는 역할
+    -target 속성의 _blank는 새 창에 대한정보를 띄워 주는 옵션
+    
+  -->
+      <a href="이동할 경로나 파일, 선택자" target="창을 여는 방식">화면에 보여질 내용</a>
+      <a href="http://google.com" tsrget="_blank"> google</a>
+      <a href="http://naver.com">NAVER</a><br>
+      <a href="#move">move</a>
+      <a href="#move2">move2</a>
+      <a href="#move3">move3</a>
+      <div id="move">move</div>
+      <div class="move2">move2</div>
+      <div id="move3">move3</div>
+      <!-- id는 이름을 하나만 쓸 수 있음 class는 이름을 여러개 지정 가능 -->
+      
+    </map>
+</body>
+</html>

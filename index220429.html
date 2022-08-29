@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="writer">
+  <meta name="description" comtent="사이트의 설명">
+  <title>문서의 요소</title>
+
+  <style>
+    H1,H2,p{
+      background-color:beige;
+    }
+  h6{
+    font-size:20px;
+  }
+  </style>
+</head>
+<body>
+  <!-- 
+  블록요소, 인라인 요소 
+  1. 블록요소
+-요소의 유형과 성질을 먼저 파악해야 한다.
+-블록 요소는 마크업 시 줄 바꿈이 일어난다.
+-블록요소 언에는 인라인 요소가 포함 될 수 있다.
+-블록요소 안에는 다른 블록요소가 포함 될 수 없다.
+-->
+
+<!-- <h1>블록요소</h1> -->
+<!-- <h2>블록 요소의 특징</h2> -->
+<!-- <P>줄 바꿈이 일어나는 성질</P> -->
+<!--
+2.인라인 요소
+-블록요소와 달리 줄 바꿈이 일어나지 않는다.
+인라인 요소 안에는 다른 인라인 요소가 포함 될 수 있다.-->
+
+<!-- <!-- <H1>인라인 요소<H2>
+<H2>인라인 요소의 특징<H2>
+<p>줄 바꿈이 일어나지 않는다</p> 
+<span>줄 바꿈이 일어나지 않는 상황</span> 
+<spa>확인</spa> -->
+<!-- 
+  제목태그
+  <H1>~<h6>
+    1.html 문서의 특징
+      1-1블록요소
+        1-1-1불록요소의 특징
+          -블록요소의 가장 큰 특징은 줄바꿈이 일어난다.
+-->
+    <h1>1.html 문서의 특징</h1>
+      <H2>1-1블록요소</H2>
+        <h3>1-1-1불록요소의 특징</h3>
+          <p> -블록요소의 가장 큰 특징은 줄바꿈이 일어난다.</p>
+          <h1><img src="logo.jpg" alt="홍길동로고"></h1>
+          <H1>제목태그</H1>
+          <H2>제목태그</H2>
+          <H3>제목태그</H3>
+          <H4>제목태그</H4>
+          <H5>제목태그</H5>
+          <H6>제목태그</H6>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Explicabo animi cumque officiis excepturi error molestias neque quisquam, magnam distinctio temporibus, sequi hic ratione ea quasi amet fugit! Voluptatum, at natus.</p>
+          <!--단락태그 
+          -지문 내용에서 엔터를 사용해도 출력내용은 한줄로 표현된다.
+          -강제적으로 문장에서 줄바꿈을 적용하려면<br>태그 사용-->
+          
+          <!-- 주소(address):footer -->
+          <address>대전시 중구 선화동000-00</address>
+
+          <!-- 구분 선<hr> 태그
+          -문서 내의 단락과 단락을 구분하기 위해 사용
+          -1px 크기의 가로 선 
+          -->
+          <h1>구분선 긋기</h1>
+          <hr style="border:3px solid red"><!-- 구분선에 스타일 넣기 -->
+          <p>첫번째 단락</p>
+          <hr>
+          <p>두번 째 단락</p>
+          
+</body>
+</html>

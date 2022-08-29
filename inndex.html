@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href=https://fonts.googleapis.com/css2?family=Lato&display=swap rel=stylesheet>
+
+</style>
+<script>
+const clockContainer = document.querySelector(".js-clock"),
+    clockTitle = document.querySelector("h1");
+
+function getTime() {
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    clockTitle.innerText =
+        `${hours < 10 ?
+            `0${hours}` : hours}:${minutes < 10 ?
+                `0${minutes}` : minutes}:${seconds < 10 ?
+                    `0${seconds}` : seconds}`;
+}
+
+
+function init() {
+    getTime();
+    setInterval(getTime, 1000);
+}
+
+init();
+
+   </script>
+</head>
+<h1> 크리스마스까지 남은 시간은?</h1>
+<body>
+</body>
+
+</html>
+
+

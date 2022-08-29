@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="writher">
+  <meta name="description" content="explanation">
+  <meta name="viewport" content="width=device=width,initial-scale=1.0">
+  <title> 표</title>
+  <link rel="stylesheet" href="css/style220512.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+      <tr>
+        <td rowspan="3">1-1</td>
+        <td>2-1</td>
+        <td>3-1</td>
+        <td>4-1</td>
+      </tr>
+      <tr>
+        <td colspan="3">2-2</td>
+      </tr>
+      <tr>
+        <td colspan="2">2-3</td>
+        <td>4-3</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <caption>상품에 대한 상하반기 판매량</caption>
+      <tr>
+        <th scope="col">구분</th>
+        <th scope="col">데스크탑 PC</th>
+        <th scope="col">스마트폰</th>
+      </tr>
+      <tr>
+        <th scope="row">상반기 판매수</th>
+        <td>2만대</td>
+        <td>3만대</td>
+      </tr>
+      <tr>
+        <th scope="row">하반기 판매수</th>
+        <td>3만대</td>
+        <td>7만대</td>
+      </tr>
+    </table>
+  </body>
+</html>
